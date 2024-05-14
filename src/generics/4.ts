@@ -1,18 +1,13 @@
-type User = {
-  name: string;
-  surname: string;
-  email: string;
-  password: string;
-};
-
-function createOrUpdateUser(initialValues: Partial<User>) {
-  return;
-  // Оновлення користувача
+function showMessage(message: string): void {
+  console.log(message);
 }
 
-createOrUpdateUser({
-  email: "user@mail.com",
-  password: "password123",
-});
+function calc(num1: number, num2: number): number {
+  return num1 + num2;
+}
+
+function customError(): never {
+  throw new Error("Error");
+}
 
 export {};
